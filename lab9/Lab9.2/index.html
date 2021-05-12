@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        div {
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        #preview {
+            margin-left: 85px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+
+            <label for="name">Name</label>
+            <input type="text" id="name" required pattern=".{3,10}">
+
+            <br>
+            <br>
+
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" required>
+
+            <br>
+            <br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required pattern="[0-9]{10}">
+
+            <br>
+            <br>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <br>
+            <br>
+
+            <label for="grad">Graduation Level</label>
+            <input type="radio" name="grad" id="grad1" value="UG" required>UG
+            <input type="radio" name="grad" id="grad2" value="PG" required>PG
+
+            <br>
+            <br>
+            <label for="qual">Qualification</label>
+            <select name="qual" id="qual" required></select>
+
+            <br>
+            <br>
+            <br>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            <button id="preview">Preview</button>
+            <script src="./app.js"></script>
+
+        </form>
+    </div>
+</body>
+
+</html>

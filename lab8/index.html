@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Styles -->
+    <style>
+        label {
+            display: inline-block;
+            width: 220px;
+        }
+
+        label,
+        input {
+            margin: 5px 0;
+        }
+    </style>
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+
+    <h2>Enter Loan Information</h2>
+    <form id="form" method="GET">
+
+        <label for="amount">1) Amount of the loan :</label>
+        <input type="text" name="amount" id="amount" required>
+        <br>
+
+        <label for="rate">2) Annual rate of interest :</label>
+        <input type="text" name="rate" id="rate" required>
+        <br>
+
+        <label for="year">3) Repayment period in years :</label>
+        <input type="text" name="year" id="year" required>
+        <br>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <h2>Payment Information</h2>
+
+        <label for="month">1) Monthly payment :</label>
+        <input type="text" name="monthly" id="month" readonly>
+        <br>
+
+        <label for="total">2) Total Payment :</label>
+        <input type="text" name="total" id="total" readonly>
+        <br>
+
+        <label for="totalpay">3) Total Interest :</label>
+        <input type="text" name="totalpay" id="totalpay" readonly>
+        <br>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
