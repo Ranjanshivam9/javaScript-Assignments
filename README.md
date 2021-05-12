@@ -1,1 +1,1 @@
-# javaScript-Assignments
+# javaScript-Assignments for training
